@@ -17,7 +17,12 @@ round_1 = Round.new(deck_1)
 def start(round_1, deck_1)
     puts "Welcome! You're playing with #{deck_1.count} cards."
     puts "-" * 40
+    
     puts "Question: #{round_1.current_card.question}"
+    round_1.take_turn(gets.chomp)
+    turn = round_1.turns.last
+    turn.correct?
+    puts turn.feedback
 end
 
 start(round_1, deck_1)
