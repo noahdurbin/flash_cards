@@ -17,6 +17,7 @@ round_1 = Round.new(deck_1)
 def start(round_1, deck_1)
     puts "Welcome! You're playing with #{deck_1.count} cards."
     puts "-" * 40
+    puts "Question: #{round_1.current_card.question}"
 end
 
 start(round_1, deck_1)
