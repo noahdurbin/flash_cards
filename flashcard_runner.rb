@@ -3,6 +3,13 @@ require './lib/turn.rb'
 require './lib/round.rb'
 require './lib/deck.rb'
 
+    question_1 = Card.new("How many bones are there in the human body?", "206", :Biology)
+    question_2 = Card.new("What is the name of the longest river in South America?", "Amazon River", :Geography)
+    question_3 = Card.new("What does Na stand for on the periodic table?", "Salt", :Science)
+    question_4 = Card.new("What temperature (in Fahrenheit) does water freeze at?", "32 Degrees", :Science)
+
+    deck_1 = Deck.new([question_1, question_2, question_3, question_4])
+
 #game starts here
-puts "Welcome you are playing with #{@Turns.size} cards"
-puts "-" * 40
+puts "Welcome you are playing with cards"
+
