@@ -30,7 +30,7 @@ def start(round_1, deck_1)
     end
 
     puts "****** Game over! ******"
-    puts "You had #{round_1.number_correct} correct guesses out of #{round_1.turns.count} for a total of #{round_1.percent_correct}%"
+    puts "You had #{round_1.number_correct} correct guesses out of #{round_1.turns.count} for a total of #{round_1.percent_correct.round}%"
 end
 
 #game starts here
