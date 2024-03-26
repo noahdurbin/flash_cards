@@ -4,6 +4,7 @@ require './lib/round.rb'
 require './lib/deck.rb'
 
 def start
+    
     card_1 = Card.new("How many bones are there in the human body?", "206", :Biology)
     card_2 = Card.new("What is the name of the longest river in South America?", "Amazon River", :Geography)
     card_3 = Card.new("What does Na stand for on the periodic table?", "Sodium", :Science)
@@ -15,6 +16,7 @@ def start
 
     puts "Welcome! You're playing with #{deck_1.count} cards."
     puts "-------------------------------------------------"
+    
     total_cards = deck_1.count
 
     until deck_1.count == 0 do
