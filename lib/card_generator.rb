@@ -1,22 +1,15 @@
 class CardGenerator 
-    attr_reader :file
-                
-    attr_accessor :@deck
 
-    def initialize(file)
-        @file = file.open
+    attr_reader :file
+
+    def initialize(filename)
+        @filename = File.read
         @deck = []
     end
 
     def file_data
-        @file.readlines.map(:&chomp)
+        File.read(@filename).split
     end
-
-    def generate_cards
-
-    end
-
-
 end
 
 # this class is initiated by a new round with an argument of a txt file that has questions, answers, and categories
