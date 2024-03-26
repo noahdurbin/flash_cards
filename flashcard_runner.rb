@@ -2,6 +2,7 @@ require './lib/card.rb'
 require './lib/turn.rb'
 require './lib/round.rb'
 require './lib/deck.rb'
+require './lib/card_generator.rb'
 
 def start
     card_1 = Card.new("How many bones are there in the human body?", "206", :Biology)
